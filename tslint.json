@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "tslint-config-standard",
+    "tslint-react",
+    "tslint-plugin-prettier"
+  ],
+  "defaultSeverity": "error",
+  "rules": {
+    "space-before-function-paren": false,
+    "prettier": true,
+    "quotemark": [true, "single", "jsx-double"],
+    "max-line-length": [
+      true,
+      {
+        "limit": 85,
+        "ignore-pattern": "^\\s*[a-zA-Z0-9]+=({|')(.*?)(}|')|^import |^export |^\\s*public |^\\s*private |^\\s*protected |^\\s*//"
+      }
+    ]
+  }
+}
